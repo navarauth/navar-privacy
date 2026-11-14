@@ -7,6 +7,7 @@
 <!-- 1. PAGE TITLE (shows on the browser tab and in search results) -->
 <title>NavAR Privacy Policy</title>
 <meta name="description" content="How NavAR collects, uses, and protects your information. NavAR is a mall navigation app by TEAM PLUS ULTRA, Cebu Technological University.">
+<meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0d345b">
 <!-- FAVICON (your NavAR logo, built into this file so it works without extra files) -->
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFW0lEQVR42u1WW2xURRj+5nJmz2536dJCu4VS7hZBoRAE0SLxAgbBoCDVcpGtwYA+oQ/yACIYEyVGYpRI4oMaX0zkQaMEH9TIvXIRkFJabm2A1hbasr1s9+y5zIwPXWh3UwIaSIzpl0zOOXPOme/7v/nnnwEGMID/KwghYIyl9RWNmTT88Vc37DBzi/LvHTGlIIT06aFs8swnpn+4/Ytvf2jq0OVf79Mke0zp3Q4XNCNaIzQ09OzyNRW7fq283Ca1/snV+v0W1xpbttEVRbM23CVemmkzGT6+ZOybmz/65Pj5K1prrZu11h832NbmRtd9Y99FmTVtmQ6VLD524wf+b4gppVBKQWsFKQFQU8x6cv6cilcqNi9cOO+RgqAPWmu1J+Z4ezoJJyDm4ByOyoOHlZ2wEPST+D8WQAgBpRRSSiilAAChvJFDFi0pWxWNrtg4e8bksAAgpXRabRs/dzJRm+TC5AAlQLzDRc3Bo57wB4TbVr3pjgUQSkEAKKUgpQQAet/U0geXr4quLy97rnx8QS4AoNPzkpoq3uAysbvdQJsLBCgglQLP4qg/XK2uXWoQwmdcT7TUVd5GAAFlFEpKaKWgAVAzHHhqwaKF0YrolmfmzZmQbRA4Snkx11GcEO7nzDwap/itHVAA/LTnqjVAGVC9/5AnFTgSLZ95Vqfbr4A0m3uixdCi+wuXLlvx+soVL66fMWkspQC6pHSuO5JSxnjQ4LAU8H0bcDoBmBRg6CGH1mAGQ1drAhcOn4Tw+6lz+cSXfTnTBGitUzZzXjJ77sPRaHTTkucXzC0cnAUAsDwvSYgWAcYEYQYogHpbY3cMuJayXAHQqfGU0ggECWr3/6muN7cIf8C4lIxdqb+lgJycSPaCxWUvRVetfGdO6fQCBiAhpXM1acMFFY4mpiUJuqWE5Wm0OcAFcCRlL3nGTEJroGrvIQeUC9n511bp2hok9aKvgJmr396xdO1ra0ePLkCjB2w7353stBV3CRO2Amwl4SrAU4CnAUKBWIdErikxZZwJKzVuXzcNwdHWeB31J6u4z++jdmPdzkyNNwXwEePGnxsUUYdrY0lGmck5MylhIOhZRoQAFIBBAZF6NkIMp85aEBwoHmnCdnpFaKUgTIZzR/7w4rEuHjDJIbejqTWlrrem3LhpOrLnK9jSyTaoFzLgmUQ6hvY8Q0vFoEFTM6sBKA1IBTAOZPkpjtVYqG904BMESvdWSc8FqvdWekz4INuvbNVKIs2mvg7ELlQfd5Ou6Q9nmyAAAaAVoKSC9lylpPSUUkprBaJBlQLlnFAf12CU0CNnEuAMGBERsJISPj9Hc10jGs6cFcLHldVa90t/C/6mgM66qtpdq+dPCw4bNSoYKSwOFhRODEaKJvrz8sdm5eaFzUFhYQQCYIKB0B4XOQVC3Q7a2jsdxqmoPJ0A4wT5YQomgJoDvztWty0C3PnGi7clMu1P5entCr/gIjTY9Ofkhf25kYJAfuHoYMGICcFI0cTQsGHFOjh8Yoe/WBBlOdJ2OTM4fawkC/lDDHy65q3k1fomk7ScmploqDrSN/v7FUAo6+1RCjrj4363CCMgIk+vXTeifOMH3PTD7mr3QoOzeaG6qL579z0wzuKJ0z/melaXl5rY9PjSCpGS0DLV9M1sAgjp2RMoA2E97eZqcxN2065tW2u2LCyJ11W1m+Eh3LJV8ujxZg+aUBVv2XErcqCnat4ZtE5vfQ4jhFLYrZevth7YuZ2a4fHZkx6dQhmxY1WHDKfhRFQmYrHM7L/7oL2x5JYue2Ha5/V66Lx1lwnl95o5/Wh2A8ExDz0Qnrrg5cz+AQzgP4e/AWWfar/RK5lIAAAAAElFTkSuQmCC">
@@ -19,21 +20,33 @@
 
 <style>
 /* ------------------------------------------------------------
-   2. COLORS AND FONT: change these few values to restyle the page
-   The colors come from the NavAR logo.
+   1. COLORS, FONT, AND SIZES: change these few values to restyle
+   Colors come from the NavAR logo. Every text/background pair
+   below passes WCAG AA contrast (4.5:1 or better).
+   Sizes use rem, so they follow the phone's text-size setting.
    ------------------------------------------------------------ */
 :root {
+  color-scheme: light dark;
+
   --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --fs-small: 0.875rem;    /* 14px  the smallest text on the page */
+  --fs-body: 0.9375rem;    /* 15px  policy text */
+  --fs-h3: 1rem;           /* 16px  sub headings */
+  --fs-h2: 1.125rem;       /* 18px  section headings */
+
   --navy: #0d345b;         /* header (logo outline color) */
   --sky: #64cef5;          /* header stripe (logo light blue) */
-  --accent: #1a6fb5;       /* links (a readable blue from the logo family) */
+  --accent: #1a6fb5;       /* links */
   --accent-soft: #d4ebf9;  /* light tint for section lines */
-  --marker: #37a6ee;       /* keyboard focus ring (logo mid blue) */
+  --focus: #1a6fb5;        /* keyboard focus ring */
   --ink: #0d2438;          /* main text */
   --muted: #4a6178;        /* secondary text */
   --page: #eef6fb;         /* page background */
   --sheet: #ffffff;        /* reading area */
   --line: #d5e3ee;         /* borders */
+  --on-navy: #ffffff;
+  --on-navy-soft: #bfe9fb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -41,7 +54,7 @@
     --navy: #0a2a4a;
     --accent: #86e4fd;
     --accent-soft: #1d3a52;
-    --marker: #64cef5;
+    --focus: #86e4fd;
     --ink: #e4f1fa;
     --muted: #9db6c8;
     --page: #0a1722;
@@ -52,24 +65,48 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+html {
+  font-size: 100%;                 /* respects the user's text size setting */
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 16px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 
 body {
   margin: 0;
   background: var(--page);
   color: var(--ink);
   font-family: var(--font);
-  font-size: 16px;
+  font-size: var(--fs-body);
   line-height: 1.65;
+  overflow-wrap: break-word;       /* long emails and links never push the page sideways */
 }
 
+/* skip link for keyboard and screen reader users */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -64px;
+  z-index: 10;
+  padding: 12px 16px;
+  min-height: 44px;
+  background: var(--sheet);
+  color: var(--accent);
+  font-weight: 700;
+  border: 2px solid var(--focus);
+  border-radius: 6px;
+}
+.skip-link:focus { top: 12px; }
+
 /* ------------------------------------------------------------
-   3. THE HEADER (your custom title and the logo live here)
+   2. THE HEADER (your custom title and the logo live here)
    ------------------------------------------------------------ */
 .site-header {
   background: var(--navy);
-  color: #ffffff;
-  padding: 36px 20px 34px;
+  color: var(--on-navy);
+  padding: 32px 20px 30px;
   border-bottom: 4px solid var(--sky);
 }
 .site-header-inner {
@@ -78,21 +115,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 20px;
 }
 .brand-text { min-width: 0; }
 .site-header h1 {
   margin: 0;
-  font-size: clamp(28px, 6vw, 38px);
-  line-height: 1.15;
+  font-size: clamp(1.625rem, 7vw, 2.25rem);
+  line-height: 1.2;
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: var(--on-navy);
 }
 .site-header p {
-  margin: 10px 0 0;
+  margin: 8px 0 0;
   max-width: 30em;
-  color: #bfe9fb;
-  font-size: 16px;
+  color: var(--on-navy-soft);
+  font-size: var(--fs-body);
 }
 .brand-logo {
   flex: none;
@@ -103,13 +141,14 @@ body {
 @media (max-width: 640px) { .brand-logo { width: 64px; } }
 
 /* ------------------------------------------------------------
-   4. THE READING AREA
+   3. THE READING AREA
    ------------------------------------------------------------ */
 main#policy {
   max-width: 700px;
   margin: 0 auto;
-  padding: 36px 20px 56px;
+  padding: 28px 20px 48px;
 }
+main#policy:focus { outline: none; }
 @media (min-width: 760px) {
   main#policy {
     margin: -22px auto 40px;
@@ -121,9 +160,9 @@ main#policy {
 }
 
 /* ------------------------------------------------------------
-   5. OVERRIDES FOR TERMLY'S CODE
-   Termly forces its own fonts and colors with !important, so
-   these rules use "#policy" in front to win. Keep them AFTER
+   4. OVERRIDES FOR TERMLY'S CODE
+   Termly forces its own fonts, sizes, and colors with !important,
+   so these rules use "#policy" in front to win. Keep them AFTER
    Termly's own <style> block.
    ------------------------------------------------------------ */
 
@@ -140,7 +179,7 @@ main#policy {
 #policy u {
   font-family: var(--font) !important;
   color: var(--ink) !important;
-  font-size: 16px !important;
+  font-size: var(--fs-body) !important;
   line-height: 1.65;
   background: transparent !important;
 }
@@ -148,22 +187,18 @@ main#policy {
 #policy [data-custom-class='body_text'] * {
   font-family: var(--font) !important;
   color: var(--ink) !important;
-  font-size: 16px !important;
+  font-size: var(--fs-body) !important;
 }
 
 #policy ul { padding-left: 1.3em; margin: 0.6em 0; }
-#policy li { margin: 0.35em 0; }
+#policy li { margin: 0.45em 0; }
 
-/* italic words stay italic (Inter Italic) */
+/* italic words stay italic (Inter Italic), bold stays bold */
 #policy em,
 #policy i,
-#policy em * {
-  font-style: italic !important;
-}
+#policy em * { font-style: italic !important; }
 #policy strong,
-#policy strong * {
-  font-weight: 700 !important;
-}
+#policy strong * { font-weight: 700 !important; }
 
 /* section headings */
 #policy h2,
@@ -171,7 +206,7 @@ main#policy {
 #policy [data-custom-class='heading_1'] * {
   font-family: var(--font) !important;
   color: var(--ink) !important;
-  font-size: 19px !important;
+  font-size: var(--fs-h2) !important;
   font-weight: 700 !important;
   line-height: 1.3;
 }
@@ -187,7 +222,7 @@ main#policy {
 #policy [data-custom-class='heading_2'] * {
   font-family: var(--font) !important;
   color: var(--ink) !important;
-  font-size: 16px !important;
+  font-size: var(--fs-h3) !important;
   font-weight: 700 !important;
 }
 #policy h3 { margin: 1.6em 0 0.4em; }
@@ -197,62 +232,73 @@ main#policy {
 #policy [data-custom-class='subtitle'] * {
   font-family: var(--font) !important;
   color: var(--muted) !important;
-  font-size: 15px !important;
+  font-size: var(--fs-small) !important;
 }
 
-/* links, including the table of contents */
+/* links: blue AND underlined, so color is not the only clue */
 #policy a,
 #policy a *,
 #policy [data-custom-class='link'],
 #policy [data-custom-class='link'] * {
   font-family: var(--font) !important;
   color: var(--accent) !important;
-  font-size: 16px !important;
+  font-size: var(--fs-body) !important;
   text-decoration: underline;
   text-underline-offset: 3px;
-  word-break: break-word;
+  overflow-wrap: anywhere;
 }
-/* make sure every link stays blue, even inside text spans */
 #policy a[href],
-#policy a[href] * {
-  color: var(--accent) !important;
-}
+#policy a[href] * { color: var(--accent) !important; }
 #policy a:hover { text-decoration-thickness: 2px; }
-#policy a:focus-visible {
-  outline: 3px solid var(--marker);
-  outline-offset: 2px;
-  border-radius: 2px;
+
+/* clear focus ring for keyboard users */
+#policy a:focus-visible,
+.skip-link:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* table of contents: each link gets a full-width, 44px tall tap area */
+#policy #toc ~ div:not(#infocollect, #infocollect ~ div):has(a) a {
+  display: block;
+  padding: 11px 0;
+  min-height: 44px;
 }
 
 /* Termly's small logo at the top: kept, but quieter */
 #policy > span:first-of-type {
   width: 7.5rem !important;
   height: 1.6rem !important;
-  margin: 0 0 1.5rem !important;
+  margin: 0 0 1.25rem !important;
   background-size: contain !important;
-  opacity: 0.55;
+  opacity: 0.6;
 }
 
 /* ------------------------------------------------------------
-   6. FOOTER
+   5. FOOTER
    ------------------------------------------------------------ */
 .site-footer {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 20px 48px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: var(--fs-small);
+  line-height: 1.6;
 }
 
 @media print {
-  .site-header { background: none; color: #000; padding: 0 0 12px; }
-  .site-header p { color: #333; }
+  .skip-link { display: none; }
+  .site-header { background: none; color: #000; padding: 0 0 12px; border-bottom: 1px solid #999; }
+  .site-header h1, .site-header p { color: #000; }
   main#policy { border: 0; margin: 0; padding: 0; }
 }
 </style>
 </head>
 
 <body>
+
+<a class="skip-link" href="#policy">Skip to the policy</a>
 
 <header class="site-header">
   <div class="site-header-inner">
@@ -265,7 +311,7 @@ main#policy {
   </div>
 </header>
 
-<main id="policy">
+<main id="policy" tabindex="-1">
 
 <style>
   [data-custom-class='body'], [data-custom-class='body'] * {
